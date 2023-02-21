@@ -17,7 +17,7 @@ class Library {
 
   addBook(item) {
     this.books.push(item);
-    localStorage.setItem("Added Books", JSON.stringify(this.books));
+    localStorage.setItem('Added Books', JSON.stringify(this.books));
     Display(item);
   }
 
@@ -25,34 +25,33 @@ class Library {
     const rm = document.getElementById(bookId);
     rm.remove();
     this.books = this.books.filter((x) => x.bookId !== bookId);
-    localStorage.setItem("Added Books", JSON.stringify(this.books));
+    localStorage.setItem('Added Books', JSON.stringify(this.books));
   }
 }
 
 const storeBook = new Library();
 
 // Getting values from input fields and adding them
-const form = document.querySelector("form");
-form.addEventListener("submit", (e) => {
-  const title = document.querySelector(".title");
-  const author = document.querySelector(".author");
+const form = document.querySelector('form');
+form.addEventListener('submit', (e) => {
+  const title = document.querySelector('.title');
+  const author = document.querySelector('.author');
   e.preventDefault();
   const newItem = new Book(title.value, author.value);
   storeBook.addBook(newItem);
 });
 
 function Display(item) {
-  const container = document.querySelector(".container");
-  const ul = document.querySelector(".bookShelfe");
-  const li = document.createElement("li");
-  li.classList.add("book");
-  li.setAttribute("id", item.bookId);
+  const container = document.querySelector('.container');
+  const ul = document.querySelector('.bookShelfe');
+  const li = document.createElement('li');
+  li.classList.add('book');
+  li.setAttribute('id', item.bookId);
   li.innerHTML = `"${item.title}" by ${item.author}`;
-  const rmbtn = document.createElement("button");
-  rmbtn.innerHTML = "Remove";
-  rmbtn.setAttribute("id", "removebtn");
-  rmbtn.addEventListener("click", () => storeBook.removeBook(item.bookId));
+  const rmbtn = document.createElement('button');
+  rmbtn.innerHTML = 'Remove';
+  rmbtn.setAttribute('id', 'removebtn');
+  rmbtn.addEventListener('click', () => storeBook.removeBook(item.bookId));
   li.appendChild(rmbtn);
   ul.appendChild(li);
 }
-

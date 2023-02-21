@@ -55,7 +55,6 @@ function Display(item) {
   li.appendChild(rmbtn);
   ul.appendChild(li);
   form.reset();
-//   renderHomePage();
 }
 
 window.onload = () => {

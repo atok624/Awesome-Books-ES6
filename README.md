@@ -29,9 +29,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Awesome Books <a name="about-project"></a>
+# 📖 Awesome Books ES6<a name="about-project"></a>
 
-**Awesome Books** is a program made with Html, Css and Javascript. It enable uses to add and remove books of their choice.
+**Awesome Books ES6** is a program made with Html, Css and Javascript. It enable uses to add and remove books of their choice.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -53,7 +53,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 Access the the online version of my application with this link
-[Live Demo](https://atok624.github.io/Awesome-Books/)
+[Live Demo](https://atok624.github.io/Awesome-Books-ES6/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -1,4 +1,5 @@
-import { DateTime } from './luxon.js';
+// eslint-disable-next-line import/no-unresolved, no-useless-escape
+import { DateTime } from 'node_modules\luxon\src\luxon.js';
 
 const today = document.getElementById('date');
 const setTime = () => {

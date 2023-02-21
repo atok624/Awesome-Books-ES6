@@ -54,4 +54,20 @@ function Display(item) {
   rmbtn.addEventListener('click', () => storeBook.removeBook(item.bookId));
   li.appendChild(rmbtn);
   ul.appendChild(li);
+  form.reset();
+//   renderHomePage();
 }
+
+window.onload = () => {
+  storeBook.books = JSON.parse(localStorage.getItem('Added Books' || '[]'));
+  if (storeBook.books === null) {
+    storeBook.books = [];
+    return;
+  }
+  storeBook.books.forEach((item) => Display(item));
+  const live = () => {
+    const date = document.getElementById('date');
+    date.innerHTML = Date().slice(0, 25);
+  };
+  setInterval(live, 1000);
+};

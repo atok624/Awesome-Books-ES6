@@ -13,6 +13,11 @@ body {
   background-color: rgba(235, 235, 235, 0.496);
   width: 90%;
   margin: 0 auto;
+  height: 100vh;
+}
+
+section {
+  height: 72vh;
 }
 
 h2 {

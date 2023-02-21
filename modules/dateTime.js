@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-unresolved, no-useless-escape
-import { DateTime } from './node_modules/luxon/src/luxon.js';
+import { DateTime } from './luxon.js';
 
 const today = document.getElementById('date');
 const setTime = () => {
@@ -9,3 +9,5 @@ const setTime = () => {
 };
 
 setInterval(setTime, 1000);
+
+export default setTime;

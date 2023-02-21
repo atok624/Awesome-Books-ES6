@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css">
+    <title>Awesome Books</title>
+  </head>
+  <body>
+    <header>
+      <h2>Awesome Books</h2>
+      <nav>
+        <ul>
+          <a id="l-link" href="#List"><li class="list">List</li></a>
+          <a id="a-link" href="#add-new"><li class="second list">Add new</li></a>
+          <a id="c-link" href="#contact"><li class="list">Contact</li></a>
+        </ul>
+      </nav> 
+    </header>
+    <div id="date"></div>
+    <section class="List">
+      <h1>All awesome books</h1>
+    
+    <div class="container"><ul class="bookShelfe"></ul></div>
+    </section>
+    <section class="add-new">
+      <h2>Add new book</h2>
+      <form id="form" class="remove-section">
+        <input type="text" class="title" name="title" placeholder="Title" required /><br>
+        <input type="text" class="author" name="author" placeholder="Author" required/><br>
+        <button class="addBtn" type="submit">Add</button>
+        </div>
+      </form>
+    </section>
+    <section class="contact">
+      <h2>Contact Information</h2>
+      <p>
+         Do you have any question or you just want to say hello!<br>
+         You can reach out to us
+      </p>
+      <ul>
+        <li class="contactinfo">Our Email: adamnoah@gmail.com</li>
+        <li class="contactinfo">Our Telephone Number: +223 66557788</li>
+        <li class="contactinfo">Our Address: P.K.4</li>
+      </ul>
+    </section>
+    <footer>
+       <p> &copy Nicholas </p>
+    </footer>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

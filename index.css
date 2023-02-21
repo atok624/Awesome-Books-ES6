@@ -1,0 +1,171 @@
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: rgba(235, 235, 235, 0.496);
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+section {
+  height: 72vh;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Beginning of header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding: 2% 5%;
+  height: auto;
+  margin: 5px 0 5px 0;
+}
+
+nav ul {
+  display: flex;
+}
+
+.list {
+  font-size: large;
+}
+
+nav ul a {
+  text-decoration: none;
+}
+
+.second {
+  margin: 0 5px;
+  padding: 0 5px;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+header h2 {
+  font-size: large;
+}
+
+/* End of header */
+
+h1 {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+}
+
+.container {
+  border: 2px black solid;
+  margin: 3% auto;
+  width: 70%;
+}
+
+form {
+  display: flex;
+  text-align: right;
+  margin: 20px auto 5% auto;
+  width: 30%;
+  flex-direction: column;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+}
+
+.title {
+  margin-bottom: 5px;
+}
+
+.title,
+.author {
+  padding: 4px;
+}
+
+.book:nth-child(odd) {
+  background: #d3d3d3;
+}
+
+hr {
+  margin-top: 30px;
+  width: 100px;
+  border: 1px solid gray;
+}
+
+.addBtn {
+  width: 60px;
+  place-self: end;
+  text-align: center;
+  padding: 2px;
+  margin-top: 5px;
+}
+
+#removebtn {
+  padding: 1px 2px;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8);
+  margin: 2px 5px;
+  font-size: 0.9em;
+}
+
+#date {
+  margin: 1% 1% 1% 0;
+  text-align: end;
+  font-weight: bolder;
+  font-size: x-small;
+}
+
+.bookShelfe {
+  margin: 0;
+}
+
+footer {
+  border: 1px solid black;
+  padding: 7px 20px;
+}
+
+.add-new {
+  display: none;
+}
+
+.contact {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 70px;
+}
+
+.contact h2 {
+  font-size: xx-large;
+}
+
+.contact p {
+  font-size: large;
+  line-height: 1.7;
+}
+
+.contact ul {
+  font-size: large;
+  line-height: 1.7;
+}
+
+.contactinfo {
+  list-style: disc;
+}
